@@ -1,20 +1,10 @@
 from rest_framework import serializers
 
-from .models import ImageModel
-from .models import TagModel
-
-
-class TagSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TagModel
-        fields = [
-            'image_id',
-            'tag',
-        ]
+from .models import ImageModel, TagModel
 
 
 class ImageSerializer(serializers.ModelSerializer):
-    tags = TagSerializer(many=True, read_only=True)
+    tags = serializers.SlugRelatedField(many=True, read_only=True, slug_field='tag')
 
     class Meta:
         model = ImageModel
@@ -23,4 +13,12 @@ class ImageSerializer(serializers.ModelSerializer):
             'description',
             'link',
             'tags',
+        ]
+
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TagModel
+        fields = [
+            'image_model',
+            'tag',
         ]

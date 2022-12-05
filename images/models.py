@@ -8,5 +8,5 @@ class ImageModel(models.Model):
 
 
 class TagModel(models.Model):
-    image_id = models.ForeignKey(ImageModel, related_name='tags', on_delete=models.CASCADE)
+    image_model = models.ForeignKey(ImageModel, related_name='tags', on_delete=models.CASCADE)
     tag = models.CharField(max_length=200)

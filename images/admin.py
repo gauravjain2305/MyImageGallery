@@ -4,3 +4,4 @@ from django.contrib import admin
 from .models import ImageModel, TagModel
 
 admin.site.register(ImageModel)
+admin.site.register(TagModel)
