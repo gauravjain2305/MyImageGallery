@@ -35,10 +35,6 @@ class ImageSerializer(serializers.ModelSerializer):
             'tags'
         ]
 
-    # def get_tags(self, obj):
-    #     qs = TagModel.objects.filter(image_model = obj.id)
-    #     return TagSerializer(qs, many=True).data
-
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = TagModel

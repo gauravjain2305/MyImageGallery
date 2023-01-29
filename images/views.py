@@ -55,6 +55,10 @@ class LoginView(generics.GenericAPIView):
 
 
 class LogoutView(generics.GenericAPIView):
+    serializer_class = LoginSerializer
+    authentication_classes = [authentication.JWTAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
     def post(self, request):
         try:
             refresh_token = request.data["refresh"]
@@ -64,6 +68,7 @@ class LogoutView(generics.GenericAPIView):
             return Response({'message': 'Logout Successful'})
         except Exception as e:
             return Response({'message': 'Something went wrong', 'error': e})
+
 
 class ImageListView(generics.ListAPIView):
     queryset = ImageModel.objects.all()
