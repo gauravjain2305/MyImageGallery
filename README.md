@@ -47,7 +47,15 @@ Endpoint |HTTP Method | Result
 `images/delete/:id` | DELETE | Delete a record
 
 ## APIs
-All apis working bullet points & Screenshot of Postman result
+An API is a set of defined rules that allows computers or applications to communicate with one another. It is a type of software interface, offering a service to other pieces of software.
+
+The APIs has some restrictions:
+-   The images are always associated with a creator (user who created it).
+-   Only authenticated users may create and see images.
+-   Only the creator may update or delete it.
+-   The API doesn't allow unauthenticated requests.
+
+We can test the APIs using [Postman](https://www.postman.com/).
 
 ### images/register
 * This API is used to register a user.
