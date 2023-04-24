@@ -51,32 +51,40 @@ All apis working bullet points & Screenshot of Postman result
 
 ### images/register
 * This API is used to register a user.
+
 ![image](https://user-images.githubusercontent.com/48149431/233985101-4b16821f-b67d-4156-b76a-81e0997733d9.png)
 
 ### images/login
 * This API is used to login user.
+
 ![image](https://user-images.githubusercontent.com/48149431/233985646-da69cdfd-4c01-48b1-8f7d-78336075e02f.png)
 
 ### images/logout
 * This API is used to logout user.
+
 ![image](https://user-images.githubusercontent.com/48149431/233987343-3a3f7299-004b-4b9c-8976-8985b7f51583.png)
 
 ### images/detail/:id
 * This API is used to get image details.
+
 ![image](https://user-images.githubusercontent.com/48149431/234035703-61652eeb-2830-4606-9f85-28106c4c6e71.png)
 
 ### images/list
 * This API is used to get a list of images.
+
 ![image](https://user-images.githubusercontent.com/48149431/234035069-f1d45b00-2f50-428a-9f56-c29ab7e2bed6.png)
 
 ### images/create
 * This API is used to create images.
+
 ![image](https://user-images.githubusercontent.com/48149431/233990341-56bae76d-8491-4c0d-9986-c66cb43d9d99.png)
 
 ### images/update/:id
 * This API is used to update image details.
+
 ![image](https://user-images.githubusercontent.com/48149431/234034112-a158e435-3076-4716-b4cb-99c6538fc159.png)
 
 ### images/delete/:id
 * This API is used to delete images.
+
 ![image](https://user-images.githubusercontent.com/48149431/234036257-93b0d998-88ed-4816-b303-89a62abdfd4f.png)
